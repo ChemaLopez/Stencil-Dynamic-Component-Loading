@@ -2,6 +2,13 @@ import { Config } from '@stencil/core';
 
 export const config: Config = {
   namespace: 'stencil-sandbox',
+  extras: {
+    enableImportInjection: true,
+  },  
+  rollupConfig:{
+    inputOptions:{
+    }
+  },
   outputTargets: [
     {
       type: 'dist',

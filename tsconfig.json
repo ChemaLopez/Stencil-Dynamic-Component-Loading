@@ -4,17 +4,16 @@
     "allowUnreachableCode": false,
     "declaration": false,
     "experimentalDecorators": true,
-    "lib": [
-      "dom",
-      "es2017"
-    ],
     "moduleResolution": "node",
-    "module": "esnext",
-    "target": "es2017",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "emitDecoratorMetadata": true,
     "jsx": "react",
-    "jsxFactory": "h"
+    "jsxFactory": "h",
+    "module": "esnext",   // Asegúrate de que el módulo es 'esnext' o 'es2020'
+    "target": "ES2022",   // Mínimo 'es2017' o 'esnext'
+    "esModuleInterop": true,
+    "lib": ["es2017", "dom"]  // Aseg
   },
   "include": [
     "src"
